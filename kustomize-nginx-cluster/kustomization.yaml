@@ -1,5 +1,6 @@
 resources:
   - namespace.yaml
+  - serviceaccount.yaml
   - rbac.yaml
   - git-repository.yaml
   - kustomization-nginx-application.yaml
