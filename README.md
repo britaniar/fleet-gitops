@@ -17,6 +17,7 @@ fleet-gitops/
 ├── applications/                    # Application resources synced to the hub cluster
 │   ├── kustomize-nginx/             # NGINX app using Flux CD + Kustomize
 │   └── simple-guestbook/            # Guestbook app using Argo CD
+├── kustomize-nginx-cluster/         # Flux manifests applied on member clusters for NGINX
 ├── rollout/                         # Hub-level bootstrap manifests
 │   ├── kustomize-nginx/             # Flux GitRepository & Kustomization for NGINX
 │   └── guestbook/                   # Argo CD AppProject & Application for Guestbook
@@ -39,6 +40,7 @@ Deploys an NGINX application across multiple clusters using Flux CD for GitOps r
 
 - **Hub bootstrap:** [`rollout/kustomize-nginx/`](rollout/kustomize-nginx/)
 - **Application resources:** [`applications/kustomize-nginx/`](applications/kustomize-nginx/)
+- **Member-cluster Flux resources:** [`kustomize-nginx-cluster/`](kustomize-nginx-cluster/)
 - **Detailed guide:** [`rollout/kustomize-nginx/README.md`](rollout/kustomize-nginx/README.md)
 
 ### Guestbook via Argo CD
